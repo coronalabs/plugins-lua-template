@@ -53,4 +53,7 @@ android/gen/*
 android/assets/*
 android/obj/*
 android/*.c
-
+android/bin/*
+android/libs/*
+proguard-project.txt
+local.properties
