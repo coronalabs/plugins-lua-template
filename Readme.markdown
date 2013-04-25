@@ -56,3 +56,21 @@ This will create several files:
 * a `build/sdk` folder
 * a zip file in `build/` that will contain all the files in `build/sdk`. This is the file you should submit.
 
+## Testing your plugin
+
+The following assumes you have used the `create_project.sh` utility above to create a new project.
+
+### main.lua
+
+There is a `main.lua` file in the `Corona` directory. The code in this folder will access your plugin's functionality.
+
+You should modify this code to access functionality offered by your plugin.
+
+### iOS
+
+Open the 'ios/PluginTestApp.xcodeproj' of your project. You can then launch a test app via Xcode.
+
+### Android
+
+Open a Terminal into the `android` directory of your project and run the `build_app.sh` shell script. This will build an __unsigned__ .apk in the `bin/` folder. You can sign this with jarsigner and install on your device for testing.
+
