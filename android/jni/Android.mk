@@ -25,7 +25,7 @@ include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := $(TARGET_NAME)
+LOCAL_MODULE    := $(LIBRARY_NAME)
 
 PLUGIN_DIR      := ../..
 CORONA_API_DIR  := $(CORONA_ROOT)/shared/include/Corona

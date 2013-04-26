@@ -23,6 +23,8 @@ then
 	exit -1
 fi
 
+LIBRARY_NAME=`echo $TARGET_NAME | sed s/plugin_/plugin./`
+
 #
 # Checks exit value for error
 # 
@@ -105,6 +107,9 @@ echo $CORONA_ENTERPRISE_RELATIVE
 export TARGET_NAME=$TARGET_NAME
 echo $TARGET_NAME
 
+export LIBRARY_NAME=$LIBRARY_NAME
+echo $LIBRARY_NAME
+
 export NDK_MODULE_PATH=$NDK_MODULE_PATH
 echo $NDK_MODULE_PATH
 
@@ -144,6 +149,6 @@ popd > /dev/null
 ######################
 
 # Copy .so files over to the Android SDK (Java) side of things
-cp -rv $path/libs/armeabi-v7a/lib${TARGET_NAME}.so $OUTPUT_DIR
+cp -rv $path/libs/armeabi-v7a/lib${LIBRARY_NAME}.so $OUTPUT_DIR
 checkError
 

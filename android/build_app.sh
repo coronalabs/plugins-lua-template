@@ -108,4 +108,4 @@ echo "Using Corona Enterprise Dir: $CORONA_PATH"
 ant release -D"CoronaEnterpriseDir"="$CORONA_PATH"
 checkError
 
-echo "Success: Build application with plugin '${TARGET_NAME}.so'"
+echo "Success: Built (unsigned) test app for plugin."
