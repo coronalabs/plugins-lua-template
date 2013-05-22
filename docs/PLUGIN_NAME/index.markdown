@@ -18,10 +18,12 @@ To use the SERVICE_NAME service, please [sign up](CORONA_REFERRAL_URL) for an ac
 
 ## Platforms
 
-The following platforms are supported:
-
-* Android
-* iOS
+* Android: Yes
+* iOS: Yes
+* Mac: No
+* Win: No
+* Kindle: No
+* NOOK: No
 
 ## Syntax
 

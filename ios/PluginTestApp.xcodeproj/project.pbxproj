@@ -42,8 +42,9 @@
 		A489DE2C16854301007FB757 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A489DE2916854301007FB757 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A489DE2D16854301007FB757 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A489DE2A16854301007FB757 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A48EF7051724F3BA008DEB9B /* PluginTestAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7031724F3BA008DEB9B /* PluginTestAppDelegate.mm */; };
+		A49335C8174D339100134A6D /* CoronaResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A49335C7174D339100134A6D /* CoronaResources.bundle */; };
 		A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E2537E166AE3DC00DCDC2C /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		A4E253E5166DE7E000DCDC2C /* liblicensing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E253E2166DE7C800DCDC2C /* liblicensing.a */; };
+		A4E253E5166DE7E000DCDC2C /* libplugin_PLUGIN_NAME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E253E2166DE7C800DCDC2C /* libplugin_PLUGIN_NAME.a */; };
 		A4F0615A16854336009C7C8F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0615916854336009C7C8F /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		A48EF7011724F3BA008DEB9B /* PluginTestApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PluginTestApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A48EF7021724F3BA008DEB9B /* PluginTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginTestAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		A48EF7031724F3BA008DEB9B /* PluginTestAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginTestAppDelegate.mm; sourceTree = SOURCE_ROOT; };
+		A49335C7174D339100134A6D /* CoronaResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CoronaResources.bundle; path = CoronaEnterprise/Corona/ios/resource/CoronaResources.bundle; sourceTree = SOURCE_ROOT; };
 		A4E2537E166AE3DC00DCDC2C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		A4E253DA166DE7C800DCDC2C /* Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Plugin.xcodeproj; sourceTree = "<group>"; };
 		A4F0615916854336009C7C8F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "CoronaEnterprise/Plugins/sdk-facebook/ios/FacebookSDK.framework"; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 				A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */,
 				A484111E15114F700074BD57 /* UIKit.framework in Frameworks */,
 				A447B67C16675195009EA762 /* libplayer.a in Frameworks */,
-				A4E253E5166DE7E000DCDC2C /* liblicensing.a in Frameworks */,
+				A4E253E5166DE7E000DCDC2C /* libplugin_PLUGIN_NAME.a in Frameworks */,
 				A4F0615A16854336009C7C8F /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +257,7 @@
 		A4841153151161300074BD57 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				A49335C7174D339100134A6D /* CoronaResources.bundle */,
 				A447B6691666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt */,
 				A447B6641666FD02009EA762 /* MainWindow-iPad.xib */,
 				A447B6651666FD02009EA762 /* MainWindow.xib */,
@@ -266,7 +269,7 @@
 		A4E253DB166DE7C800DCDC2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4E253E2166DE7C800DCDC2C /* liblicensing.a */,
+				A4E253E2166DE7C800DCDC2C /* libplugin_PLUGIN_NAME.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -328,10 +331,9 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A4E253E2166DE7C800DCDC2C /* liblicensing.a */ = {
+		A4E253E2166DE7C800DCDC2C /* libplugin_PLUGIN_NAME.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			name = liblicensing.a;
 			path = libplugin_PLUGIN_NAME.a;
 			remoteRef = A4E253E1166DE7C800DCDC2C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -347,6 +349,7 @@
 				A447B6671666FD02009EA762 /* MainWindow-iPad.xib in Resources */,
 				A447B6681666FD02009EA762 /* MainWindow.xib in Resources */,
 				A447B66A1666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt in Resources */,
+				A49335C8174D339100134A6D /* CoronaResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
